@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>Resume</title>
     <style>
 
@@ -14,8 +12,6 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-family: "Tuffy", sans-serif;
-            /* border:1px solid red; */
         }
         body{
             display: flex;
@@ -24,18 +20,14 @@
         main{
             margin: 20px;
             display: flex;
-            width: 65%;
-            min-height: 100vh;
+            width: 700px;
+            height: 100vh;
             border: 1px solid black;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            box-shadow: 10px 10px 10px black,10px 10px 10px white;
+            box-shadow: 10px 10px 10px black;
             border-radius: 10px;
-            background-color:red;
-            /* background-image: url(background_resume.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-size: 100% 100%; */
+            /* overflow: auto; */
         }
 
         /* .sec{
@@ -45,45 +37,45 @@
         } */
 
         .sec1{
-            width: 43%;
+            width: 47%;
             height: 100%;
             border-radius: 10px 0 0 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-image: url(sec1.png);
+            background-image: url(Screenshot\ 2025-05-30\ 173232.png);
             background-repeat: no-repeat;
-            /* background-size: cover; */
             background-size: 100% 100%;
+            object-fit: cover;
         }
 
         .sec2{
-            width: 50%;
-            min-height: 100%;
+            width: 53%;
+            height: 100%;
             /* border: 1px solid red; */
             /* background-color: aqua; */
             border-radius: 0 10px 10px 0;
-            padding:80px 20px 10px 0;
-            /* background-color: yellow; */
+            padding: 15px 15px 0 15px;
         }
+
+
         header{
             position: relative;
-            /* border:2px solid yellow; */
         }
 
         .head_div{  
-            --height:200px;
-            width: 200px;
+            --height:210px;
+            width: 100%;
             height: var(--height);
             position: relative;
-            /* border:4px solid white; */
-            margin:28px auto;
+            /* border: 1px solid red; */
         }
         .head_div img{
             position: absolute;
-     
-            width: 100%;
-            height: 100%;
+            top: 23%;
+            left: 17%;
+            width: 60%;
+            height: 65%;
             border-radius: 50%;
             border: 0.5px solid black ;
         }
@@ -95,7 +87,7 @@
             /* justify-content:space-between;
             align-items: center; */
             flex-direction: column;
-            gap: 60px;
+            gap: 30px;
         }
 
         .div1{
@@ -112,6 +104,10 @@
             padding: 20px;          
         }
 
+        .div1 h1{
+            font-size: 15px;
+        }
+
         i{
             margin-right: 8px;
             color: rgb(194, 201, 207)
@@ -125,13 +121,13 @@
             color: rgb(194, 201, 207);
         }
 
-        h4{
+         h4{
             color: rgb(161, 70, 161);
             padding: 6px;
             font-size: 18px;
         }
 
-        .exp{
+        .sec2 .exp{
             margin-top: 15px;
         }
 
@@ -139,7 +135,9 @@
             padding-left: 30px;
         }
                 
-       
+       /* .sec2 h1{
+        text-align: center;
+       } */
 
         .sec2 p{
             padding: 10px;
@@ -149,6 +147,45 @@
             margin-top: 10px;
         }
 
+
+
+
+
+
+
+
+        @media (max-width: 400px) {
+    main {
+        flex-direction: column;
+        height: 200vh;
+        transition: all 0.3s ease-in-out;
+        overflow: auto;
+    }
+
+    .sec1, .sec2 {
+        height: 50%;
+        width: 100%;
+        border-radius: 10px 10px 0 0; /* Reset border-radius for stacked layout */
+    }
+
+    .sec2 {
+        padding-top: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+    .sec2 h1{
+        text-align: center;
+    }
+}
+
+        
+
+
+
+      
+
+        
+
+
     </style>
 </head>
 <body>
@@ -157,13 +194,13 @@
             <header>
                 <div class="head_div">
                 <img src="photo.jpg">
-               </div>
+            </div>
             </header>
             <footer class="body1">
                 <div class="body_div div1">
-                    <div class="box box1"><i class="fa-solid fa-location-dot"></i><span>MAHARASHTRA (PALGHAR)</span></div>
-                    <div class="box box2"><i class="fa-solid fa-phone"></i><span>+91 84838 89129</span></div>
-                    <div class="box box3"><i class="fa-solid fa-envelope"></i><span>tusharpatil1212543@gmail.com</span></div>
+                    <h1><i class="fa-solid fa-location-dot"></i><span>MAHARASHTRA (PALGHAR)</span></h1>
+                    <h1><i class="fa-solid fa-phone"></i><span>+91 84838 89129</span></h1>
+                    <h1><i class="fa-solid fa-envelope"></i><span>tusharpatil1212543@gmail.com</span></h1>
                 </div>
                 <div class="body_div div2">
                     <h1>Objective</h1><br>
@@ -172,7 +209,7 @@
             </footer>
         </section>
         <section class="sec sec2">
-                <h1>TUSHAR PATIL</h1>
+             <h1>TUSHAR PATIL</h1>
                 <br>
                 <h4 class="exp">Projects </h4>
                 <ul>
